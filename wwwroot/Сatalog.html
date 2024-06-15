@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="keywords" content="">
     <meta name="description" content="">
-    <title>Сatalog</title>
+    <title>Basket</title>
     <link rel="stylesheet" href="nicepage.css" media="screen">
     <link rel="stylesheet" href="Сatalog.css" media="screen">
     <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
@@ -15,7 +15,8 @@
     <link id="u-theme-google-font" rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
 
-    <script src="./basket.js"></script>
+
+    <script src="basket-add.js"></script>
     <script type="application/ld+json">{
         "@context": "http://schema.org",
         "@type": "Organization",
@@ -33,59 +34,67 @@
 <body data-path-to-root="./" data-include-products="true" class="u-body u-xl-mode" data-lang="ru">
 <header class="u-clearfix u-header u-header" id="sec-58e9">
     <div class="u-clearfix u-sheet u-sheet-1">
-        <a href="/" class="u-image u-logo u-image-1" data-image-width="517" data-image-height="363" title="/">
-            <img src="images/photo_2024-06-10_16-47-42.jpg" class="u-logo-image u-logo-image-1">
-        </a>
-        <nav class="u-menu u-menu-one-level u-offcanvas u-menu-1" data-responsive-from="MD">
-            <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px; font-weight: 700;">
-                <a class="u-button-style u-custom-border u-custom-border-color u-custom-borders u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-color u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
-                   href="#" style="padding: 7px 4px; font-size: calc(1em + 14px);">
-                    <svg class="u-svg-link" viewBox="0 0 24 24">
-                        <use xlink:href="#menu-hamburger"></use>
-                    </svg>
-                    <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px"
-                         xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
-                        <g>
-                            <rect y="1" width="16" height="2"></rect>
-                            <rect y="7" width="16" height="2"></rect>
-                            <rect y="13" width="16" height="2"></rect>
-                        </g>
-                    </svg>
-                </a>
-            </div>
-            <div class="u-custom-menu u-nav-container">
-                <ul class="u-nav u-spacing-20 u-unstyled u-nav-1">
-                    <li class="u-nav-item"><a
-                            class="u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-palette-2-base"
-                            href="Сatalog" style="padding: 10px;">Сatalog</a>
-                    </li>
-                    <li class="u-nav-item"><a
-                            class="u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-palette-2-base"
-                            href="Contacts" style="padding: 10px;">Contacts</a>
-                    </li>
-                    <li class="u-nav-item"><a
-                            class="u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-palette-2-base"
-                            href="About-us" style="padding: 10px;">About us</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="u-custom-menu u-nav-container-collapse">
-                <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
-                    <div class="u-inner-container-layout u-sidenav-overflow">
-                        <div class="u-menu-close"></div>
-                        <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2">
-                            <li class="u-nav-item"><a class="u-button-style u-nav-link" href="Сatalog">Сatalog</a>
-                            </li>
-                            <li class="u-nav-item"><a class="u-button-style u-nav-link" href="Contacts">Contacts</a>
-                            </li>
-                            <li class="u-nav-item"><a class="u-button-style u-nav-link" href="About-us">About us</a>
-                            </li>
-                        </ul>
-                    </div>
+        <div class="u-align-center u-clearfix u-group-elements u-group-elements-1">
+            <a href="/" class="u-image u-logo u-image-1" data-image-width="517" data-image-height="363" title="/">
+                <img src="images/photo_2024-06-10_16-47-42.jpg" class="u-logo-image u-logo-image-1">
+            </a>
+            <nav class="u-menu u-menu-one-level u-offcanvas u-menu-1" data-responsive-from="MD">
+                <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px; font-weight: 700;">
+                    <a class="u-button-style u-custom-border u-custom-border-color u-custom-borders u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-color u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                       href="#" style="padding: 7px 4px; font-size: calc(1em + 14px);">
+                        <svg class="u-svg-link" viewBox="0 0 24 24">
+                            <use xlink:href="#svg-7a73"></use>
+                        </svg>
+                        <svg class="u-svg-content" version="1.1" id="svg-7a73" viewBox="0 0 16 16" x="0px" y="0px"
+                             xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <rect y="1" width="16" height="2"></rect>
+                                <rect y="7" width="16" height="2"></rect>
+                                <rect y="13" width="16" height="2"></rect>
+                            </g>
+                        </svg>
+                    </a>
                 </div>
-                <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
-            </div>
-        </nav>
+                <div class="u-custom-menu u-nav-container">
+                    <ul class="u-nav u-spacing-20 u-unstyled u-nav-1">
+                        <li class="u-nav-item"><a
+                                class="u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-palette-2-base"
+                                href="Сatalog" style="padding: 10px;">Сatalog</a>
+                        </li>
+                        <li class="u-nav-item"><a
+                                class="u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-palette-2-base"
+                                href="/Basket" style="padding: 10px;">Basket</a>
+                        </li>
+                        <li class="u-nav-item"><a
+                                class="u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-palette-2-base"
+                                href="Contacts" style="padding: 10px;">Contacts</a>
+                        </li>
+                        <li class="u-nav-item"><a
+                                class="u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-palette-2-base"
+                                href="About-us" style="padding: 10px;">About us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="u-custom-menu u-nav-container-collapse">
+                    <div class="u-black u-container-style u-expanded-width u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+                        <div class="u-inner-container-layout u-sidenav-overflow">
+                            <div class="u-expanded u-menu-close"></div>
+                            <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2">
+                                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="Сatalog">Сatalog</a>
+                                </li>
+                                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="/Basket">Basket</a>
+                                </li>
+                                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="Contacts">Contacts</a>
+                                </li>
+                                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="About-us">About us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+                </div>
+            </nav>
+        </div>
     </div>
 </header>
 <section class="u-align-center u-clearfix u-section-1" id="sec-c7cd">
@@ -127,59 +136,54 @@
                                 <!--/product_old_price--><!--product_regular_price-->
                                 <div class="u-price u-text-palette-2-base"
                                      style="font-size: 1.25rem; font-weight: 700;">‏١٠٫٠٠&nbsp;ج.م.‏
-                                </div><!--/product_regular_price-->
+                                </div>
                             </div>
-                        </div><!--/product_price--><!--product_button--><!--options_json-->
-                        <!--{"clickType":"buy-now","content":"Добавить в корзину"}--><!--/options_json-->
-                        <button
-                           data-id="8"
-
-                           data-product="{&quot;id&quot;:&quot;8&quot;,&quot;name&quot;:&quot;кофта&quot;,&quot;title&quot;:&quot;кофта&quot;,&quot;description&quot;:&quot;&quot;,&quot;fullDescription&quot;:&quot;&quot;,&quot;price&quot;:&quot;10&quot;,&quot;oldPrice&quot;:&quot;&quot;,&quot;quantity&quot;:1,&quot;currency&quot;:&quot;EGP&quot;,&quot;sku&quot;:&quot;&quot;,&quot;outOfStock&quot;:false,&quot;isFeatured&quot;:false,&quot;categories&quot;:[],&quot;images&quot;:[{&quot;url&quot;:&quot;images/photo_2024-06-10_15-55-352.jpg&quot;}],&quot;created&quot;:1718034265943,&quot;updated&quot;:1718048910032,&quot;isDefault&quot;:false,&quot;categoriesData&quot;:[{&quot;link&quot;:&quot;./products/products.html#/1///&quot;,&quot;title&quot;:&quot;Uncategorized&quot;}]}">
-                            <!--product_button_content-->Добавить в корзину<!--/product_button_content--></button>
-                        <!--/product_button-->
+                        </div>
+                        <div style="margin: 30px;">
+                            <button
+                                    data-id="8"
+                                    data-product="{&quot;id&quot;:&quot;8&quot;,&quot;name&quot;:&quot;кофта&quot;,&quot;title&quot;:&quot;кофта&quot;,&quot;description&quot;:&quot;&quot;,&quot;fullDescription&quot;:&quot;&quot;,&quot;price&quot;:&quot;10&quot;,&quot;oldPrice&quot;:&quot;&quot;,&quot;quantity&quot;:1,&quot;currency&quot;:&quot;EGP&quot;,&quot;sku&quot;:&quot;&quot;,&quot;outOfStock&quot;:false,&quot;isFeatured&quot;:false,&quot;categories&quot;:[],&quot;images&quot;:[{&quot;url&quot;:&quot;images/photo_2024-06-10_15-55-352.jpg&quot;}],&quot;created&quot;:1718034265943,&quot;updated&quot;:1718048910032,&quot;isDefault&quot;:false,&quot;categoriesData&quot;:[{&quot;link&quot;:&quot;./products/products.html#/1///&quot;,&quot;title&quot;:&quot;Uncategorized&quot;}]}">
+                                Добавить в корзину
+                            </button>
+                        </div>
                     </div>
-                </div><!--/product_item--><!--product_item-->
+                </div>
                 <div class="u-align-center u-container-align-center u-container-style u-products-item u-repeater-item u-white u-repeater-item-2"
                      data-product-id="6">
                     <div class="u-container-layout u-similar-container u-valign-top u-container-layout-2">
-                        <!--product_image-->
                         <a class="u-product-title-link" href="products/платье.html"><img alt=""
                                                                                          class="u-expanded-width u-image u-image-contain u-image-default u-product-control u-image-2"
                                                                                          src="images/photo_2024-06-10_15-55-35.jpg"></a>
-                        <!--/product_image--><!--product_title-->
                         <h4 class="u-align-center u-product-control u-text u-text-default u-text-2">
                             <a class="u-product-title-link" href="products/платье.html">платье</a>
                         </h4><!--/product_title--><!--product_price-->
                         <div class="u-align-center u-product-control u-product-price u-product-price-2"
                              data-add-zero-cents="true">
-                            <div class="u-price-wrapper u-spacing-10"><!--product_old_price-->
+                            <div class="u-price-wrapper u-spacing-10">
                                 <div class="u-old-price" style="text-decoration: line-through !important;"></div>
-                                <!--/product_old_price--><!--product_regular_price-->
                                 <div class="u-price u-text-palette-2-base"
                                      style="font-size: 1.25rem; font-weight: 700;">‏١٠٫٠٠&nbsp;ج.م.‏
-                                </div><!--/product_regular_price-->
+                                </div>
                             </div>
-                        </div><!--/product_price--><!--product_button--><!--options_json-->
-                        <!--{"clickType":"buy-now","content":"Добавить в корзину"}--><!--/options_json-->
-                        <a href="#sec-b0c8"
-                           class="u-align-center u-border-2 u-border-grey-25 u-btn u-btn-rectangle u-button-style u-none u-product-control u-text-body-color u-btn-2 u-dialog-link u-payment-button"
-                           data-product-button-click-type="buy-now" data-product-id="6"
-                           data-product="{&quot;id&quot;:&quot;6&quot;,&quot;name&quot;:&quot;платье&quot;,&quot;title&quot;:&quot;платье&quot;,&quot;description&quot;:&quot;&quot;,&quot;fullDescription&quot;:&quot;&quot;,&quot;price&quot;:&quot;10&quot;,&quot;oldPrice&quot;:&quot;&quot;,&quot;quantity&quot;:1,&quot;currency&quot;:&quot;EGP&quot;,&quot;sku&quot;:&quot;&quot;,&quot;outOfStock&quot;:false,&quot;isFeatured&quot;:false,&quot;categories&quot;:[&quot;1&quot;,&quot;6&quot;],&quot;images&quot;:[{&quot;url&quot;:&quot;images/photo_2024-06-10_15-55-35.jpg&quot;}],&quot;created&quot;:1718033339973,&quot;updated&quot;:1718048870103,&quot;isDefault&quot;:false,&quot;categoriesData&quot;:[{&quot;link&quot;:&quot;./products/products.html#/1///1&quot;,&quot;title&quot;:&quot;Clothes&quot;},{&quot;link&quot;:&quot;./products/products.html#/1///6&quot;,&quot;title&quot;:&quot;Dress&quot;}]}">
-                            <!--product_button_content-->Добавить в корзину<!--/product_button_content--></a>
-                        <!--/product_button-->
+                        </div>
+                        <div style="margin: 30px;">
+                            <button
+                                    data-id="6"
+                                    data-product="{&quot;id&quot;:&quot;8&quot;,&quot;name&quot;:&quot;кофта&quot;,&quot;title&quot;:&quot;кофта&quot;,&quot;description&quot;:&quot;&quot;,&quot;fullDescription&quot;:&quot;&quot;,&quot;price&quot;:&quot;10&quot;,&quot;oldPrice&quot;:&quot;&quot;,&quot;quantity&quot;:1,&quot;currency&quot;:&quot;EGP&quot;,&quot;sku&quot;:&quot;&quot;,&quot;outOfStock&quot;:false,&quot;isFeatured&quot;:false,&quot;categories&quot;:[],&quot;images&quot;:[{&quot;url&quot;:&quot;images/photo_2024-06-10_15-55-352.jpg&quot;}],&quot;created&quot;:1718034265943,&quot;updated&quot;:1718048910032,&quot;isDefault&quot;:false,&quot;categoriesData&quot;:[{&quot;link&quot;:&quot;./products/products.html#/1///&quot;,&quot;title&quot;:&quot;Uncategorized&quot;}]}">
+                                Добавить в корзину
+                            </button>
+                        </div>
                     </div>
-                </div><!--/product_item--><!--product_item-->
+                </div>
                 <div class="u-align-center u-container-align-center u-container-style u-products-item u-repeater-item u-white u-repeater-item-3"
                      data-product-id="5">
                     <div class="u-container-layout u-similar-container u-valign-top u-container-layout-3">
-                        <!--product_image-->
                         <a class="u-product-title-link" href="products/костюм-1.html"><img alt=""
                                                                                            class="u-expanded-width u-image u-image-contain u-image-default u-product-control u-image-3"
                                                                                            src="images/photo_2024-06-10_15-55-342.jpg"></a>
-                        <!--/product_image--><!--product_title-->
                         <h4 class="u-align-center u-product-control u-text u-text-default u-text-3">
                             <a class="u-product-title-link" href="products/костюм-1.html">костюм-1</a>
-                        </h4><!--/product_title--><!--product_price-->
+                        </h4>
                         <div class="u-align-center u-product-control u-product-price u-product-price-3"
                              data-add-zero-cents="true">
                             <div class="u-price-wrapper u-spacing-10"><!--product_old_price-->
@@ -191,12 +195,13 @@
                             </div>
                         </div><!--/product_price--><!--product_button--><!--options_json-->
                         <!--{"clickType":"buy-now","content":"Добавить в корзину"}--><!--/options_json-->
-                        <a href="#sec-b0c8"
-                           class="u-align-center u-border-2 u-border-grey-25 u-btn u-btn-rectangle u-button-style u-none u-product-control u-text-body-color u-btn-3 u-dialog-link u-payment-button"
-                           data-product-button-click-type="buy-now" data-product-id="5"
-                           data-product="{&quot;id&quot;:&quot;5&quot;,&quot;name&quot;:&quot;костюм-1&quot;,&quot;title&quot;:&quot;костюм-1&quot;,&quot;description&quot;:&quot;&quot;,&quot;fullDescription&quot;:&quot;&quot;,&quot;price&quot;:&quot;10&quot;,&quot;oldPrice&quot;:&quot;&quot;,&quot;quantity&quot;:1,&quot;currency&quot;:&quot;EGP&quot;,&quot;sku&quot;:&quot;&quot;,&quot;outOfStock&quot;:false,&quot;isFeatured&quot;:false,&quot;categories&quot;:[&quot;1&quot;,&quot;4&quot;],&quot;images&quot;:[{&quot;url&quot;:&quot;images/photo_2024-06-10_15-55-342.jpg&quot;}],&quot;created&quot;:1718033185618,&quot;updated&quot;:1718048855078,&quot;isDefault&quot;:false,&quot;categoriesData&quot;:[{&quot;link&quot;:&quot;./products/products.html#/1///1&quot;,&quot;title&quot;:&quot;Clothes&quot;},{&quot;link&quot;:&quot;./products/products.html#/1///4&quot;,&quot;title&quot;:&quot;suit&quot;}]}">
-                            <!--product_button_content-->Добавить в корзину<!--/product_button_content--></a>
-                        <!--/product_button-->
+                        <div style="margin: 30px;">
+                            <button
+                                    data-id="5"
+                                    data-product="{&quot;id&quot;:&quot;8&quot;,&quot;name&quot;:&quot;кофта&quot;,&quot;title&quot;:&quot;кофта&quot;,&quot;description&quot;:&quot;&quot;,&quot;fullDescription&quot;:&quot;&quot;,&quot;price&quot;:&quot;10&quot;,&quot;oldPrice&quot;:&quot;&quot;,&quot;quantity&quot;:1,&quot;currency&quot;:&quot;EGP&quot;,&quot;sku&quot;:&quot;&quot;,&quot;outOfStock&quot;:false,&quot;isFeatured&quot;:false,&quot;categories&quot;:[],&quot;images&quot;:[{&quot;url&quot;:&quot;images/photo_2024-06-10_15-55-352.jpg&quot;}],&quot;created&quot;:1718034265943,&quot;updated&quot;:1718048910032,&quot;isDefault&quot;:false,&quot;categoriesData&quot;:[{&quot;link&quot;:&quot;./products/products.html#/1///&quot;,&quot;title&quot;:&quot;Uncategorized&quot;}]}">
+                                Добавить в корзину
+                            </button>
+                        </div>
                     </div>
                 </div><!--/product_item--><!--product_item-->
                 <div class="u-align-center u-container-align-center u-container-style u-products-item u-repeater-item u-white u-repeater-item-4"
@@ -221,12 +226,13 @@
                             </div>
                         </div><!--/product_price--><!--product_button--><!--options_json-->
                         <!--{"clickType":"buy-now","content":"Добавить в корзину"}--><!--/options_json-->
-                        <a href="#sec-b0c8"
-                           class="u-align-center u-border-2 u-border-grey-25 u-btn u-btn-rectangle u-button-style u-none u-product-control u-text-body-color u-btn-4 u-dialog-link u-payment-button"
-                           data-product-button-click-type="buy-now" data-product-id="4"
-                           data-product="{&quot;id&quot;:&quot;4&quot;,&quot;name&quot;:&quot;футболка-3&quot;,&quot;title&quot;:&quot;футболка-3&quot;,&quot;description&quot;:&quot;&quot;,&quot;fullDescription&quot;:&quot;&quot;,&quot;price&quot;:&quot;10&quot;,&quot;oldPrice&quot;:&quot;&quot;,&quot;quantity&quot;:1,&quot;currency&quot;:&quot;EGP&quot;,&quot;sku&quot;:&quot;&quot;,&quot;outOfStock&quot;:false,&quot;isFeatured&quot;:false,&quot;categories&quot;:[&quot;1&quot;,&quot;5&quot;],&quot;images&quot;:[{&quot;url&quot;:&quot;images/photo_2024-06-10_15-55-362.jpg&quot;}],&quot;created&quot;:1718033168208,&quot;updated&quot;:1718048839961,&quot;isDefault&quot;:false,&quot;categoriesData&quot;:[{&quot;link&quot;:&quot;./products/products.html#/1///1&quot;,&quot;title&quot;:&quot;Clothes&quot;},{&quot;link&quot;:&quot;./products/products.html#/1///5&quot;,&quot;title&quot;:&quot;shirts&quot;}]}">
-                            <!--product_button_content-->Добавить в корзину<!--/product_button_content--></a>
-                        <!--/product_button-->
+                        <div style="margin: 30px;">
+                            <button
+                                    data-id="4"
+                                    data-product="{&quot;id&quot;:&quot;8&quot;,&quot;name&quot;:&quot;кофта&quot;,&quot;title&quot;:&quot;кофта&quot;,&quot;description&quot;:&quot;&quot;,&quot;fullDescription&quot;:&quot;&quot;,&quot;price&quot;:&quot;10&quot;,&quot;oldPrice&quot;:&quot;&quot;,&quot;quantity&quot;:1,&quot;currency&quot;:&quot;EGP&quot;,&quot;sku&quot;:&quot;&quot;,&quot;outOfStock&quot;:false,&quot;isFeatured&quot;:false,&quot;categories&quot;:[],&quot;images&quot;:[{&quot;url&quot;:&quot;images/photo_2024-06-10_15-55-352.jpg&quot;}],&quot;created&quot;:1718034265943,&quot;updated&quot;:1718048910032,&quot;isDefault&quot;:false,&quot;categoriesData&quot;:[{&quot;link&quot;:&quot;./products/products.html#/1///&quot;,&quot;title&quot;:&quot;Uncategorized&quot;}]}">
+                                Добавить в корзину
+                            </button>
+                        </div>
                     </div>
                 </div><!--/product_item--><!--product_item-->
                 <div class="u-align-center u-container-align-center u-container-style u-products-item u-repeater-item u-white u-repeater-item-5"
@@ -250,13 +256,13 @@
                                 </div><!--/product_regular_price-->
                             </div>
                         </div><!--/product_price--><!--product_button--><!--options_json-->
-                        <!--{"clickType":"buy-now","content":"Добавить в корзину"}--><!--/options_json-->
-                        <a href="#sec-b0c8"
-                           class="u-align-center u-border-2 u-border-grey-25 u-btn u-btn-rectangle u-button-style u-none u-product-control u-text-body-color u-btn-5 u-dialog-link u-payment-button"
-                           data-product-button-click-type="buy-now" data-product-id="3"
-                           data-product="{&quot;id&quot;:&quot;3&quot;,&quot;name&quot;:&quot;футболка-2&quot;,&quot;title&quot;:&quot;футболка-2&quot;,&quot;description&quot;:&quot;&quot;,&quot;fullDescription&quot;:&quot;&quot;,&quot;price&quot;:&quot;10&quot;,&quot;oldPrice&quot;:&quot;&quot;,&quot;quantity&quot;:1,&quot;currency&quot;:&quot;EGP&quot;,&quot;sku&quot;:&quot;&quot;,&quot;outOfStock&quot;:false,&quot;isFeatured&quot;:false,&quot;categories&quot;:[],&quot;images&quot;:[{&quot;url&quot;:&quot;images/photo_2024-06-10_15-55-372.jpg&quot;}],&quot;created&quot;:1718033060079,&quot;updated&quot;:1718048827674,&quot;isDefault&quot;:false,&quot;categoriesData&quot;:[{&quot;link&quot;:&quot;./products/products.html#/1///&quot;,&quot;title&quot;:&quot;Uncategorized&quot;}]}">
-                            <!--product_button_content-->Добавить в корзину<!--/product_button_content--></a>
-                        <!--/product_button-->
+                        <div style="margin: 30px;">
+                            <button
+                                    data-id="3"
+                                    data-product="{&quot;id&quot;:&quot;8&quot;,&quot;name&quot;:&quot;кофта&quot;,&quot;title&quot;:&quot;кофта&quot;,&quot;description&quot;:&quot;&quot;,&quot;fullDescription&quot;:&quot;&quot;,&quot;price&quot;:&quot;10&quot;,&quot;oldPrice&quot;:&quot;&quot;,&quot;quantity&quot;:1,&quot;currency&quot;:&quot;EGP&quot;,&quot;sku&quot;:&quot;&quot;,&quot;outOfStock&quot;:false,&quot;isFeatured&quot;:false,&quot;categories&quot;:[],&quot;images&quot;:[{&quot;url&quot;:&quot;images/photo_2024-06-10_15-55-352.jpg&quot;}],&quot;created&quot;:1718034265943,&quot;updated&quot;:1718048910032,&quot;isDefault&quot;:false,&quot;categoriesData&quot;:[{&quot;link&quot;:&quot;./products/products.html#/1///&quot;,&quot;title&quot;:&quot;Uncategorized&quot;}]}">
+                                Добавить в корзину
+                            </button>
+                        </div>
                     </div>
                 </div><!--/product_item--><!--product_item-->
                 <div class="u-align-center u-container-align-center u-container-style u-products-item u-repeater-item u-white u-repeater-item-6"
@@ -281,12 +287,13 @@
                             </div>
                         </div><!--/product_price--><!--product_button--><!--options_json-->
                         <!--{"clickType":"buy-now","content":"Добавить в корзину"}--><!--/options_json-->
-                        <a href="#sec-b0c8"
-                           class="u-align-center u-border-2 u-border-grey-25 u-btn u-btn-rectangle u-button-style u-none u-product-control u-text-body-color u-btn-6 u-dialog-link u-payment-button"
-                           data-product-button-click-type="buy-now" data-product-id="2"
-                           data-product="{&quot;id&quot;:&quot;2&quot;,&quot;name&quot;:&quot;футболка-1&quot;,&quot;title&quot;:&quot;футболка-1&quot;,&quot;description&quot;:&quot;&quot;,&quot;fullDescription&quot;:&quot;&quot;,&quot;price&quot;:&quot;10&quot;,&quot;oldPrice&quot;:&quot;&quot;,&quot;quantity&quot;:1,&quot;currency&quot;:&quot;EGP&quot;,&quot;sku&quot;:&quot;&quot;,&quot;outOfStock&quot;:false,&quot;isFeatured&quot;:false,&quot;categories&quot;:[&quot;1&quot;,&quot;5&quot;],&quot;images&quot;:[{&quot;url&quot;:&quot;images/photo_2024-06-10_15-55-39.jpg&quot;}],&quot;created&quot;:1718032903913,&quot;updated&quot;:1718048792848,&quot;isDefault&quot;:false,&quot;categoriesData&quot;:[{&quot;link&quot;:&quot;./products/products.html#/1///1&quot;,&quot;title&quot;:&quot;Clothes&quot;},{&quot;link&quot;:&quot;./products/products.html#/1///5&quot;,&quot;title&quot;:&quot;shirts&quot;}]}">
-                            <!--product_button_content-->Добавить в корзину<!--/product_button_content--></a>
-                        <!--/product_button-->
+                        <div style="margin: 30px;">
+                            <button
+                                    data-id="2"
+                                    data-product="{&quot;id&quot;:&quot;8&quot;,&quot;name&quot;:&quot;кофта&quot;,&quot;title&quot;:&quot;кофта&quot;,&quot;description&quot;:&quot;&quot;,&quot;fullDescription&quot;:&quot;&quot;,&quot;price&quot;:&quot;10&quot;,&quot;oldPrice&quot;:&quot;&quot;,&quot;quantity&quot;:1,&quot;currency&quot;:&quot;EGP&quot;,&quot;sku&quot;:&quot;&quot;,&quot;outOfStock&quot;:false,&quot;isFeatured&quot;:false,&quot;categories&quot;:[],&quot;images&quot;:[{&quot;url&quot;:&quot;images/photo_2024-06-10_15-55-352.jpg&quot;}],&quot;created&quot;:1718034265943,&quot;updated&quot;:1718048910032,&quot;isDefault&quot;:false,&quot;categoriesData&quot;:[{&quot;link&quot;:&quot;./products/products.html#/1///&quot;,&quot;title&quot;:&quot;Uncategorized&quot;}]}">
+                                Добавить в корзину
+                            </button>
+                        </div>
                     </div>
                 </div><!--/product_item--><!--product_item-->
                 <div class="u-align-center u-container-align-center u-container-style u-products-item u-repeater-item u-white u-repeater-item-7"
@@ -311,12 +318,13 @@
                             </div>
                         </div><!--/product_price--><!--product_button--><!--options_json-->
                         <!--{"clickType":"buy-now","content":"Добавить в корзину"}--><!--/options_json-->
-                        <a href="#sec-b0c8"
-                           class="u-align-center u-border-2 u-border-grey-25 u-btn u-btn-rectangle u-button-style u-none u-product-control u-text-body-color u-btn-7 u-dialog-link u-payment-button"
-                           data-product-button-click-type="buy-now" data-product-id="1"
-                           data-product="{&quot;id&quot;:&quot;1&quot;,&quot;name&quot;:&quot;футболка&quot;,&quot;title&quot;:&quot;Футболка&quot;,&quot;description&quot;:&quot;&quot;,&quot;fullDescription&quot;:&quot;&quot;,&quot;price&quot;:&quot;10&quot;,&quot;oldPrice&quot;:&quot;&quot;,&quot;quantity&quot;:1,&quot;currency&quot;:&quot;EGP&quot;,&quot;sku&quot;:&quot;&quot;,&quot;outOfStock&quot;:false,&quot;isFeatured&quot;:false,&quot;categories&quot;:[&quot;1&quot;,&quot;5&quot;],&quot;images&quot;:[{&quot;url&quot;:&quot;images/photo_2024-06-10_15-55-37.jpg&quot;}],&quot;created&quot;:1718032880788,&quot;updated&quot;:1718048779790,&quot;isDefault&quot;:false,&quot;categoriesData&quot;:[{&quot;link&quot;:&quot;./products/products.html#/1///1&quot;,&quot;title&quot;:&quot;Clothes&quot;},{&quot;link&quot;:&quot;./products/products.html#/1///5&quot;,&quot;title&quot;:&quot;shirts&quot;}]}">
-                            <!--product_button_content-->Добавить в корзину<!--/product_button_content--></a>
-                        <!--/product_button-->
+                        <div style="margin: 30px;">
+                            <button
+                                    data-id="1"
+                                    data-product="{&quot;id&quot;:&quot;8&quot;,&quot;name&quot;:&quot;кофта&quot;,&quot;title&quot;:&quot;кофта&quot;,&quot;description&quot;:&quot;&quot;,&quot;fullDescription&quot;:&quot;&quot;,&quot;price&quot;:&quot;10&quot;,&quot;oldPrice&quot;:&quot;&quot;,&quot;quantity&quot;:1,&quot;currency&quot;:&quot;EGP&quot;,&quot;sku&quot;:&quot;&quot;,&quot;outOfStock&quot;:false,&quot;isFeatured&quot;:false,&quot;categories&quot;:[],&quot;images&quot;:[{&quot;url&quot;:&quot;images/photo_2024-06-10_15-55-352.jpg&quot;}],&quot;created&quot;:1718034265943,&quot;updated&quot;:1718048910032,&quot;isDefault&quot;:false,&quot;categoriesData&quot;:[{&quot;link&quot;:&quot;./products/products.html#/1///&quot;,&quot;title&quot;:&quot;Uncategorized&quot;}]}">
+                                Добавить в корзину
+                            </button>
+                        </div>
                     </div>
                 </div><!--/product_item-->
 
@@ -373,14 +381,7 @@
         </div>
     </div>
 </footer>
-<section class="u-backlink u-clearfix u-grey-80">
-    <p class="u-text">
-        <span>This site was created with the </span>
-        <a class="u-link" href="https://nicepage.com/" target="_blank" rel="nofollow">
-            <span>Nicepage</span>
-        </a>
-    </p>
-</section>
+
 <section
         class="u-black u-clearfix u-container-style u-dialog-block u-opacity u-opacity-70 u-payment-dialog u-valign-middle u-dialog-section-4"
         id="sec-b0c8">
@@ -400,72 +401,72 @@
     </div>
 </section>
 <style>.u-dialog-section-4 .u-dialog-1 {
-  width: 570px;
-  min-height: 578px;
-  height: auto;
-  box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.2);
-  margin: 60px auto;
+    width: 570px;
+    min-height: 578px;
+    height: auto;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+    margin: 60px auto;
 }
 
 .u-dialog-section-4 .u-container-layout-1 {
-  padding: 34px 35px;
+    padding: 34px 35px;
 }
 
 .u-dialog-section-4 .u-text-1 {
-  font-weight: 700;
-  margin: 0 165px 0 0;
+    font-weight: 700;
+    margin: 0 165px 0 0;
 }
 
 .u-dialog-section-4 .u-icon-1 {
-  width: 20px;
-  height: 20px;
-  left: auto;
-  top: 36px;
-  position: absolute;
-  right: 35px;
-  padding: 0;
+    width: 20px;
+    height: 20px;
+    left: auto;
+    top: 36px;
+    position: absolute;
+    right: 35px;
+    padding: 0;
 }
 
 @media (max-width: 1199px) {
-  .u-dialog-section-4 .u-text-1 {
-    margin-right: 165px;
-  }
+    .u-dialog-section-4 .u-text-1 {
+        margin-right: 165px;
+    }
 }
 
 @media (max-width: 991px) {
-  .u-dialog-section-4 .u-container-layout-1 {
-    padding: 30px;
-  }
+    .u-dialog-section-4 .u-container-layout-1 {
+        padding: 30px;
+    }
 
-  .u-dialog-section-4 .u-icon-1 {
-    top: 32px;
-    right: 30px;
-  }
+    .u-dialog-section-4 .u-icon-1 {
+        top: 32px;
+        right: 30px;
+    }
 }
 
 @media (max-width: 767px) {
-  .u-dialog-section-4 .u-dialog-1 {
-    width: 540px;
-  }
+    .u-dialog-section-4 .u-dialog-1 {
+        width: 540px;
+    }
 }
 
 @media (max-width: 575px) {
-  .u-dialog-section-4 .u-dialog-1 {
-    width: 340px;
-  }
+    .u-dialog-section-4 .u-dialog-1 {
+        width: 340px;
+    }
 
-  .u-dialog-section-4 .u-container-layout-1 {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
+    .u-dialog-section-4 .u-container-layout-1 {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 
-  .u-dialog-section-4 .u-text-1 {
-    margin-right: 5px;
-  }
+    .u-dialog-section-4 .u-text-1 {
+        margin-right: 5px;
+    }
 
-  .u-dialog-section-4 .u-icon-1 {
-    right: 20px;
-  }
+    .u-dialog-section-4 .u-icon-1 {
+        right: 20px;
+    }
 }
 </style>
 </body>

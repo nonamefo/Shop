@@ -5,8 +5,10 @@ using WebApplication1;
 
 
 
+
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
+
 
 var app = builder.Build();
 
@@ -55,6 +57,17 @@ app.Map("/Ñatalog", async (context) =>
     method.user_console(context);
 
     await response.SendFileAsync("wwwroot/Ñatalog.html");
+});
+
+
+app.Map("/Basket", async (context) =>
+{
+    var response = context.Response;
+    response.ContentType = "text/html;";
+
+    method.user_console(context);
+
+    await response.SendFileAsync("wwwroot/basket.html");
 });
 
 
