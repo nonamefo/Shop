@@ -7,8 +7,6 @@ document.onclick = event => {
             )
         ).toString();
 
-        console.log(basket);
-
         localStorage.setItem("products", basket);
     }
 }
