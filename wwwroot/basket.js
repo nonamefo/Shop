@@ -1,280 +1,68 @@
-const lst = {
-    "products": [
-        {
-            "id": "8",
-            "name": "кофта",
-            "title": "кофта",
-            "description": "",
-            "fullDescription": "",
-            "price": "10",
-            "oldPrice": "",
-            "quantity": 1,
-            "currency": "EGP",
-            "sku": "",
-            "outOfStock": false,
-            "isFeatured": false,
-            "categories": [],
-            "images": [
-                {
-                    "url": "/images/photo_2024-06-10_15-55-352.jpg?rand=94f2"
-                }
-            ],
-            "created": 1718034265943,
-            "updated": 1718048910032,
-            "isDefault": false
-        },
-        {
-            "id": "6",
-            "name": "платье",
-            "title": "платье",
-            "description": "",
-            "fullDescription": "",
-            "price": "10",
-            "oldPrice": "",
-            "quantity": 1,
-            "currency": "EGP",
-            "sku": "",
-            "outOfStock": false,
-            "isFeatured": false,
-            "categories": [
-                "1",
-                "6"
-            ],
-            "images": [
-                {
-                    "url": "/images/photo_2024-06-10_15-55-35.jpg?rand=0963"
-                }
-            ],
-            "created": 1718033339973,
-            "updated": 1718048870103,
-            "isDefault": false
-        },
-        {
-            "id": "5",
-            "name": "костюм-1",
-            "title": "костюм-1",
-            "description": "",
-            "fullDescription": "",
-            "price": "10",
-            "oldPrice": "",
-            "quantity": 1,
-            "currency": "EGP",
-            "sku": "",
-            "outOfStock": false,
-            "isFeatured": false,
-            "categories": [
-                "1",
-                "4"
-            ],
-            "images": [
-                {
-                    "url": "/images/photo_2024-06-10_15-55-342.jpg?rand=3a5d"
-                }
-            ],
-            "created": 1718033185618,
-            "updated": 1718048855078,
-            "isDefault": false
-        },
-        {
-            "id": "4",
-            "name": "футболка-3",
-            "title": "футболка-3",
-            "description": "",
-            "fullDescription": "",
-            "price": "10",
-            "oldPrice": "",
-            "quantity": 1,
-            "currency": "EGP",
-            "sku": "",
-            "outOfStock": false,
-            "isFeatured": false,
-            "categories": [
-                "1",
-                "5"
-            ],
-            "images": [
-                {
-                    "url": "/images/photo_2024-06-10_15-55-362.jpg?rand=5069"
-                }
-            ],
-            "created": 1718033168208,
-            "updated": 1718048839961,
-            "isDefault": false
-        },
-        {
-            "id": "3",
-            "name": "футболка-2",
-            "title": "футболка-2",
-            "description": "",
-            "fullDescription": "",
-            "price": "10",
-            "oldPrice": "",
-            "quantity": 1,
-            "currency": "EGP",
-            "sku": "",
-            "outOfStock": false,
-            "isFeatured": false,
-            "categories": [],
-            "images": [
-                {
-                    "url": "/images/photo_2024-06-10_15-55-372.jpg?rand=cdc0"
-                }
-            ],
-            "created": 1718033060079,
-            "updated": 1718048827674,
-            "isDefault": false
-        },
-        {
-            "id": "2",
-            "name": "футболка-1",
-            "title": "футболка-1",
-            "description": "",
-            "fullDescription": "",
-            "price": "10",
-            "oldPrice": "",
-            "quantity": 1,
-            "currency": "EGP",
-            "sku": "",
-            "outOfStock": false,
-            "isFeatured": false,
-            "categories": [
-                "1",
-                "5"
-            ],
-            "images": [
-                {
-                    "url": "/images/photo_2024-06-10_15-55-39.jpg?rand=7cb8"
-                }
-            ],
-            "created": 1718032903913,
-            "updated": 1718048792848,
-            "isDefault": false
-        },
-        {
-            "id": "1",
-            "name": "футболка",
-            "title": "Футболка",
-            "description": "",
-            "fullDescription": "",
-            "price": "10",
-            "oldPrice": "",
-            "quantity": 1,
-            "currency": "EGP",
-            "sku": "",
-            "outOfStock": false,
-            "isFeatured": false,
-            "categories": [
-                "1",
-                "5"
-            ],
-            "images": [
-                {
-                    "url": "/images/photo_2024-06-10_15-55-37.jpg?rand=220b"
-                }
-            ],
-            "created": 1718032880788,
-            "updated": 1718048779790,
-            "isDefault": false
-        },
-        {
-            "id": "7",
-            "name": "костюм1",
-            "title": "костюм1",
-            "description": "",
-            "fullDescription": "",
-            "price": "10",
-            "oldPrice": "",
-            "quantity": 1,
-            "currency": "EGP",
-            "sku": "",
-            "outOfStock": false,
-            "isFeatured": false,
-            "categories": [
-                "1",
-                "4"
-            ],
-            "images": [
-                {
-                    "url": "/images/photo_2024-06-10_12-52-582.jpg?rand=1667"
-                }
-            ],
-            "created": 1718022939337,
-            "updated": 1718032820288,
-            "isDefault": false
-        }
-    ],
-    "categories": [
-        {
-            "id": "1",
-            "title": "Clothes",
-            "categoryId": null,
-            "created": 1718016059746,
-            "updated": 1718016059746
-        },
-        {
-            "id": "3",
-            "title": "Accessories",
-            "categoryId": null,
-            "created": 1718016059746,
-            "updated": 1718016059746
-        },
-        {
-            "id": "4",
-            "title": "suit",
-            "categoryId": "1",
-            "created": 1718031026557,
-            "updated": 1718031026557
-        },
-        {
-            "id": "5",
-            "title": "shirts",
-            "categoryId": "1",
-            "created": 1718032873634,
-            "updated": 1718032873634
-        },
-        {
-            "id": "6",
-            "title": "Dress",
-            "categoryId": "1",
-            "created": 1718033338412,
-            "updated": 1718033338412
-        }
-    ]
-};
+async function loadProducts() {
+    try {
+        var lst;
+        lst = await fetch("http://localhost:8080/products")
+            .then(resp => resp.json());
 
-var div = document.createElement("div");
-try {
-    const num_lst = localStorage.getItem("products").replace("undefined,", "").split(',');
-    const num = num_lst.filter(element => element !== "");
+        console.log("1");
 
-    num.forEach(id => {
+        // Теперь вы можете использовать lst
+
         var div = document.createElement("div");
-        const i = lst.products.find(p => p.id === id);
-        div.classList.add("product-item");
 
-        if (i) {
-            div.style.padding = "40px";
-            div.innerHTML = `
-            <img src="${i.images[0].url}" alt="${i.name}" width="100">
-            <h3>${i.name}</h3>
-            <p>Цена: ${i.price} ${i.currency}</p>
-            <button class="nb_4_6 ag05-a0 ag05-a2" style="background:rgba(0, 48, 120, 0.039);color:rgba(0, 26, 52, 1);">
+        try {
+            const num_lst = localStorage.getItem("products").split(',');
+            console.log(num_lst);
+            const num = num_lst.filter(element => element !== "" && element !== "undefined");
+            console.log(num);
+            if (num.length === 1 && (num[0] === "")) {
+                div.style.width = "100px";
+                div.style.height = "100px";
+                div.style.display = "flex";
+                div.style.justifyContent = "center";
+                div.style.alignItems = "center";
+                div.style.textAlign = "center";
+                div.style.marginBottom = "100px";
+                div.innerHTML = "Your basket is empty";
+                document.getElementById('basket').appendChild(div);
+            } else if (num.length === 0) {
+                div.style.width = "100px";
+                div.style.height = "100px";
+                div.style.display = "flex";
+                div.style.justifyContent = "center";
+                div.style.alignItems = "center";
+                div.style.textAlign = "center";
+                div.style.marginBottom = "100px";
+                div.innerHTML = "Your basket is empty";
+                document.getElementById('basket').appendChild(div);
+            } else {
+                num.forEach(id => {
+                    var div = document.createElement("div");
+                    const i = lst.products.find(p => p.id === id);
+                    div.classList.add("product-item");
 
-            </button>
-            `;
-
+                    if (i) {
+                        div.style.padding = "40px";
+                        div.innerHTML = `
+                            <img src="${i.images[0].url}" alt="${i.name}" width="150">
+                            <h2>${i.name}</h2>
+                            <p>${i.description}</p>
+                            <p>Price: ${i.price}</p>
+                            <button data-id="${i.id}">
+                                <img data-id="${i.id}" src="images/bin.png" width="20">
+                            </button>
+                          `;
+                        document.getElementById('basket').appendChild(div);
+                    }
+                });
+            }
+        } catch (error) {
+            console.error('Ошибка при чтении localStorage:', error);
         }
-        document.getElementById("basket").appendChild(div);
-    });
-
-} catch {
-    div.style.width = "100px";
-    div.style.height = "100px";
-    div.style.display = "flex";
-    div.style.justifyContent = "center";
-    div.style.alignItems = "center";
-    div.style.textAlign = "center";
-    div.innerHTML = "Your basket is empty";
-    document.body.appendChild(div);
+    } catch (error) {
+        console.error('Ошибка при получении данных:', error);
+    }
 }
 
+// Вызываем функцию
+loadProducts();

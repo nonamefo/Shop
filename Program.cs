@@ -71,4 +71,35 @@ app.Map("/Basket", async (context) =>
 });
 
 
+app.Map("/products", async (context) =>
+{
+    var response = context.Response;
+    response.ContentType = "application/json; charset=utf-8";
+
+    try
+    {
+        var filePath = Path.Combine(context.Request.PathBase, "wwwroot/products/products.json");
+
+        if (File.Exists(filePath))
+        {
+            var fileContent = await File.ReadAllTextAsync(filePath);
+            await response.WriteAsync(fileContent);
+        }
+        else
+        {
+            response.StatusCode = 404; // Статус "Файл не найден"
+            await response.WriteAsync("Файл не найден.");
+        }
+    }
+    catch (Exception ex)
+    {
+        // Обработка ошибки 
+        response.StatusCode = 500;
+        await response.WriteAsync("Произошла ошибка.");
+        Console.WriteLine(ex.Message);
+    }
+});
+
+
+
 app.Run();

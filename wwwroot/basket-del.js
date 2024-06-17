@@ -1,15 +1,16 @@
 document.onclick = event => {
-    if (event.target.dataset.id) {
+    if (event.target.dataset) {
         const indexToRemove = event.target.dataset.id;
 
         let basket = localStorage.getItem("products");
 
-        if (basket) {
-            basket = basket.replace("null,", "").split(',').filter(el => el !== "");
+        basket = basket.split(',')
+            .filter(el => el !== "")
+            .filter(el => el !== "null")
+            .filter(el => el !== "undefined")
+            .filter(element => element !== indexToRemove);
 
-            const updatedBasket = basket.filter(element => element !== indexToRemove);
-
-            localStorage.setItem("products", updatedBasket.join(','));
-        }
+        localStorage.setItem("products", basket.join(','));
+        location.reload();
     }
 };

@@ -1,0 +1,1 @@
+﻿change basket.js a link to a domain name due to a fucking one-source policy

@@ -6,7 +6,6 @@ document.onclick = event => {
                 localStorage.getItem("products").replace("null", "").split(',')
             )
         ).toString();
-
         localStorage.setItem("products", basket);
     }
 }
