@@ -2,6 +2,28 @@
   min-height: 1722px;
 }
 
+
+
+
+.btn {
+  transition: 1s;
+  background-color: white;
+}
+.btn:hover {
+  transition: 1s;
+  background-color: white;
+  border-radius:40px;
+}
+.btn:active {
+  animation: color-change 0.4s ease;
+  border-radius: 40px;
+}
+
+@keyframes color-change {
+  from { background-color: white; }
+  to { background-color: aquamarine; }
+}
+
 .u-section-1 .u-products-1 {
   margin: 42px 0 58px;
 }

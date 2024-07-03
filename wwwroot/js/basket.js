@@ -49,7 +49,7 @@ async function loadProducts() {
                             <p>${i.description}</p>
                             <p>Price: ${i.price}</p>
                             <button data-id="${i.id}">
-                                <img data-id="${i.id}" src="images/bin.png" width="20">
+                                <img data-id="${i.id}" src="../images/bin.png" width="20">
                             </button>
                           `;
                         document.getElementById('basket').appendChild(div);

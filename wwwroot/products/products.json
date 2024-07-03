@@ -1,6 +1,110 @@
 {
   "products": [
     {
+      "id": "12",
+      "name": "вап",
+      "title": "вап",
+      "description": "",
+      "fullDescription": "",
+      "price": "10",
+      "oldPrice": "",
+      "quantity": 1,
+      "currency": "EGP",
+      "sku": "",
+      "outOfStock": false,
+      "isFeatured": false,
+      "categories": [
+        "2",
+        "6"
+      ],
+      "images": [
+        {
+          "url": "/images/photo_2024-06-10_12-52-54.jpg?rand=1667"
+        }
+      ],
+      "created": 1718022939337,
+      "updated": 1718032820288,
+      "isDefault": false
+    },
+    {
+      "id": "11",
+      "name": "апр",
+      "title": "апр",
+      "description": "",
+      "fullDescription": "",
+      "price": "10",
+      "oldPrice": "",
+      "quantity": 1,
+      "currency": "EGP",
+      "sku": "",
+      "outOfStock": false,
+      "isFeatured": false,
+      "categories": [
+        "2",
+        "6"
+      ],
+      "images": [
+        {
+          "url": "/images/photo_2024-06-10_12-52-552.jpg?rand=1667"
+        }
+      ],
+      "created": 1718022939337,
+      "updated": 1718032820288,
+      "isDefault": false
+    },
+    {
+      "id": "10",
+      "name": "про",
+      "title": "про",
+      "description": "",
+      "fullDescription": "",
+      "price": "10",
+      "oldPrice": "",
+      "quantity": 1,
+      "currency": "EGP",
+      "sku": "",
+      "outOfStock": false,
+      "isFeatured": false,
+      "categories": [
+        "2",
+        "6"
+      ],
+      "images": [
+        {
+          "url": "/images/photo_2024-06-10_12-52-56.jpg?rand=1667"
+        }
+      ],
+      "created": 1718022939337,
+      "updated": 1718032820288,
+      "isDefault": false
+    },
+    {
+      "id": "9",
+      "name": "уке",
+      "title": "уке",
+      "description": "",
+      "fullDescription": "",
+      "price": "10",
+      "oldPrice": "",
+      "quantity": 1,
+      "currency": "EGP",
+      "sku": "",
+      "outOfStock": false,
+      "isFeatured": false,
+      "categories": [
+        "2",
+        "6"
+      ],
+      "images": [
+        {
+          "url": "/images/photo_2024-06-10_12-52-59.jpg?rand=1667"
+        }
+      ],
+      "created": 1718022939337,
+      "updated": 1718032820288,
+      "isDefault": false
+    },
+    {
       "id": "8",
       "name": "кофта",
       "title": "кофта",
@@ -22,6 +126,32 @@
       ],
       "created": 1718034265943,
       "updated": 1718048910032,
+      "isDefault": false
+    },
+    {
+      "id": "7",
+      "name": "костюм1",
+      "title": "костюм1",
+      "description": "",
+      "fullDescription": "",
+      "price": "10",
+      "oldPrice": "",
+      "quantity": 1,
+      "currency": "EGP",
+      "sku": "",
+      "outOfStock": false,
+      "isFeatured": false,
+      "categories": [
+        "1",
+        "4"
+      ],
+      "images": [
+        {
+          "url": "/images/photo_2024-06-10_12-52-582.jpg?rand=1667"
+        }
+      ],
+      "created": 1718022939337,
+      "updated": 1718032820288,
       "isDefault": false
     },
     {
@@ -176,38 +306,19 @@
       "created": 1718032880788,
       "updated": 1718048779790,
       "isDefault": false
-    },
-    {
-      "id": "7",
-      "name": "костюм1",
-      "title": "костюм1",
-      "description": "",
-      "fullDescription": "",
-      "price": "10",
-      "oldPrice": "",
-      "quantity": 1,
-      "currency": "EGP",
-      "sku": "",
-      "outOfStock": false,
-      "isFeatured": false,
-      "categories": [
-        "1",
-        "4"
-      ],
-      "images": [
-        {
-          "url": "/images/photo_2024-06-10_12-52-582.jpg?rand=1667"
-        }
-      ],
-      "created": 1718022939337,
-      "updated": 1718032820288,
-      "isDefault": false
     }
   ],
   "categories": [
     {
       "id": "1",
       "title": "Clothes",
+      "categoryId": null,
+      "created": 1718016059746,
+      "updated": 1718016059746
+    },
+    {
+      "id": "2",
+      "title": "robe",
       "categoryId": null,
       "created": 1718016059746,
       "updated": 1718016059746

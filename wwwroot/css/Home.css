@@ -1,3 +1,26 @@
+.btn {
+  margin: 0 auto;
+  margin-top: 30px;
+  display: block;
+  position: relative;
+  transition: 1s;
+  background-color: white;
+}
+.btn:hover {
+  transition: 1s;
+  background-color: white;
+  border-radius:40px;
+}
+.btn:active {
+  animation: color-change 0.4s ease;
+  border-radius: 40px;
+}
+
+@keyframes color-change {
+  from { background-color: white; }
+  to { background-color: aquamarine; }
+}
+
 .u-section-1 .u-sheet-1 {
   min-height: 638px;
 }
@@ -259,7 +282,7 @@
 
 .u-section-2 .u-image-1 {
   min-height: 447px;
-  background-image: url("images/photo_2024-06-10_12-52-582.jpg");
+  background-image: url("../images/photo_2024-06-10_12-52-582.jpg");
   background-position: 50% 50%;
 }
 
@@ -290,7 +313,7 @@
 
 .u-section-2 .u-image-2 {
   min-height: 440px;
-  background-image: url("images/photo_2024-06-10_12-52-59.jpg");
+  background-image: url("../images/photo_2024-06-10_12-52-59.jpg");
   background-position: 50% 50%;
 }
 
@@ -321,7 +344,7 @@
 
 .u-section-2 .u-image-3 {
   min-height: 474px;
-  background-image: url("images/photo_2024-06-10_12-52-56.jpg");
+  background-image: url("../images/photo_2024-06-10_12-52-56.jpg");
   background-position: 50% 50%;
 }
 
@@ -352,7 +375,7 @@
 
 .u-section-2 .u-image-4 {
   min-height: 394px;
-  background-image: url("images/photo_2024-06-10_12-52-552.jpg");
+  background-image: url("../images/photo_2024-06-10_12-52-552.jpg");
   background-position: 50% 50%;
 }
 
@@ -383,7 +406,7 @@
 
 .u-section-2 .u-image-5 {
   min-height: 334px;
-  background-image: url("images/photo_2024-06-10_15-55-342.jpg");
+  background-image: url("../images/photo_2024-06-10_15-55-342.jpg");
   background-position: 50% 50%;
 }
 
@@ -414,7 +437,7 @@
 
 .u-section-2 .u-image-6 {
   min-height: 397px;
-  background-image: url("images/photo_2024-06-10_15-55-372.jpg");
+  background-image: url("../images/photo_2024-06-10_15-55-372.jpg");
   background-position: 50% 50%;
 }
 
