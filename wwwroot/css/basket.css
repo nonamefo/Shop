@@ -9,4 +9,26 @@
        justify-content: space-around; /* Распределяем элементы равномерно по горизонтали */
    }
 
-
+.obj_img {
+    width: 300px;
+}
+.obj_button{
+    height: 50px;
+    width: 35px;
+    margin:30;
+    transition: 1s;
+    background-color: white;
+}
+.obj_button:hover {
+    transition: 1s;
+    background-color: white;
+    border-radius:40px;
+}
+.obj_button:active {
+animation: color-change 0.4s ease;
+border-radius: 40px;
+}
+@keyframes color-change {
+    from { background-color: white; }
+    to { background-color: aquamarine; }
+}

@@ -1,18 +1,11 @@
 function createProductCard(productId, productName, price, imageUrl) {
     // Создаем контейнер для карточки товара
     const card = document.createElement('div');
-    card.style.marginBottom = '100px';
-    card.style.marginLeft = '25px';
-    card.style.marginRight = '25px';
-    card.style.textAlign = 'center';
-    card.style.width = '300px';
-    setTimeout(() => { // Запускаем функцию с задержкой в 0 мс
-        card.classList.add('obj_card');
-    }, 0);
+    card.classList.add('obj_card');
 
     // Создаем ссылку на страницу товара
     const link = document.createElement('a');
-    link.href = `products/${productId}`;
+    link.href = `products/${productId}`; 
     card.appendChild(link);
 
     // Создаем изображение
@@ -23,7 +16,7 @@ function createProductCard(productId, productName, price, imageUrl) {
 
     // Создаем элемент с ценой
     const priceElement = document.createElement('p');
-    priceElement.textContent = price;
+    priceElement.textContent = price; 
     card.appendChild(priceElement);
 
     // Создаем кнопку "Добавить в корзину"
@@ -60,5 +53,6 @@ async function main() {
         // Обработайте случай, если data == null
     }
 }
-
-main(); 
+window.onload = function() {
+    main();
+}

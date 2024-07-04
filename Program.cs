@@ -96,6 +96,9 @@ app.Map("/products", async (context) =>
     var response = context.Response;
     response.ContentType = "application/json; charset=utf-8";
 
+    method.user_console(context);
+
+
     try
     {
         var filePath = Path.Combine(context.Request.PathBase, "wwwroot/products/products.json");
