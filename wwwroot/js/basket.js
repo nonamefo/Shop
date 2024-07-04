@@ -1,3 +1,14 @@
+async function API_get() {
+    try {
+        var data = await fetch("http://localhost:8080/products")
+            .then(resp => resp.json());
+        return data["products"];
+    } catch (error) {
+        console.error("Ошибка при получении данных:", error);
+        return null; // Или другой результат, если нужно
+    }
+}
+
 function createProductCard(productId, productName, price, imageUrl) {
     // Создаем контейнер для карточки товара
     const card = document.createElement('div');
@@ -5,9 +16,7 @@ function createProductCard(productId, productName, price, imageUrl) {
     card.style.marginLeft = '25px';
     card.style.marginRight = '25px';
     card.style.textAlign = 'center';
-    card.style.width = 'auto'; // Добавлен стиль ширины для карточки
-
-
+    card.style.width = 'auto'; // Задаем фиксированную ширину для карточки
     requestAnimationFrame(() => { 
         card.classList.add('obj_card');
     });
@@ -20,7 +29,7 @@ function createProductCard(productId, productName, price, imageUrl) {
 
     // Создаем ссылку на страницу товара
     const link = document.createElement('a');
-    link.href = `/products/${productId}`; 
+    link.href = `/products/${productId}`; // Исправлена ошибка в строке
     contentContainer.appendChild(link); 
 
     // Создаем изображение
@@ -44,49 +53,87 @@ function createProductCard(productId, productName, price, imageUrl) {
 
     contentContainer.appendChild(descriptionContainer);
 
-    // Создаем кнопку "Добавить в корзину"
+    // Создаем кнопку "Удалить из корзины"
     const button = document.createElement('button');
     button.classList.add('obj_button');
     button.dataset.id = productId;
     button.style.marginLeft = '70px'; 
 
-
     // Создаем изображение для кнопки
     const buttonImage = document.createElement('img'); 
-    buttonImage.src = '/images/bin.png'; // Замените на ваш путь к изображению
-    buttonImage.style.width = '100%'; // Занимает всю ширину кнопки 
-    button.appendChild(buttonImage); // Добавляем изображение в кнопку
+    buttonImage.src = '/images/bin.png'; 
+    buttonImage.style.width = '100%'; 
+    buttonImage.dataset.id = productId; 
+    buttonImage.classList.add('obj_bin'); 
+    button.appendChild(buttonImage); 
 
     contentContainer.appendChild(button); 
 
     return card;
 }
 
+function createOrderButton() {
+    const button = document.createElement('button');
+    button.classList.add('order');
+    button.id = 'theid';
+    button.textContent = 'Offerm order';
+    return button;
+}
 
-async function API_get() {
-    try {
-        var data = await fetch("http://localhost:8080/products")
-            .then(resp => resp.json());
-        return data["products"];
-    } catch (error) {
-        console.error("Ошибка при получении данных:", error);
-        return null; // Или другой результат, если нужно
-    }
+function emptyBasket() {
+    // Создаем контейнер для карточки товара
+    const card = document.createElement('div');
+    card.style.margin = '0 auto';
+    card.style.marginBottom = '150px';
+    card.style.textAlign = 'center';
+    card.style.width = '300px'; // Задаем фиксированную ширину для карточки
+    
+    requestAnimationFrame(() => { 
+        card.classList.add('obj_card');
+    });
+
+    const contentContainer = document.createElement('div');
+    contentContainer.style.display = 'flex'; 
+    contentContainer.style.alignItems = 'center'; 
+    card.appendChild(contentContainer);
+
+    const descriptionContainer = document.createElement('div');
+    descriptionContainer.style.marginLeft = '20px';
+
+    const nameElement = document.createElement('h3'); 
+    nameElement.textContent = 'Your basket is empty. Fill it to make an orderr';
+    descriptionContainer.appendChild(nameElement);
+
+    contentContainer.appendChild(descriptionContainer); 
+
+    return card;
 }
 
 async function main() {
     var data = await API_get();
-    if (data) {
-        console.log(Object.keys(data).length);
-        const catalogContainer = document.querySelector('.basket'); // Получаем элемент
+    const binContainer = document.querySelector('.basket');
+
+    const localStorageIds = localStorage.getItem("products"); // Получаем ID из localStorage
+    const ids = localStorageIds ? localStorageIds.split(',').filter(id => id !== "" && id !== "undefined") : []; 
+
+    data = data.filter(product => ids.includes(product.id));
+    console.log(data);
+    if ((Object.keys(data).length === 0)){
+        var basket = emptyBasket();
+        binContainer.appendChild(basket);
+    } else{
         data.forEach(element => {
-            const card = createProductCard(element["id"], element["name"], element["price"], element["images"][0]["url"]);
-            catalogContainer.appendChild(card); // Добавляем карточку на страницу
+            var objects = createProductCard(element["id"], element["name"], element["price"], element["images"][0]["url"]);
+            binContainer.appendChild(objects);
+            
         });
-    } else {
-        // Обработайте случай, если data == null
+
+
+        var btn = createOrderButton();
+        binContainer.appendChild(btn);  
     }
 }
+
 window.onload = function() {
     main();
 }
