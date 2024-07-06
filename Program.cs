@@ -75,21 +75,13 @@ app.Map("/Making-an-order", async(context) =>
 {
     var response = context.Response;
     response.ContentType = "text/html;";
-
+    var num = context.Items["data-id"];
+    Console.WriteLine(num);
     method.user_console(context);
 
     await response.SendFileAsync("wwwroot/Making-an-order.html");
 });
 
-app.Map("/tests", async (context) =>
-{
-    var response = context.Response;
-    response.ContentType = "text/html;";
-
-    method.user_console(context);
-
-    await response.SendFileAsync("wwwroot/object_Catalog.html");
-});
 
 app.Map("/products", async (context) =>
 {

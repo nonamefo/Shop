@@ -1,6 +1,6 @@
 async function API_get() {
     try {
-        var data = await fetch("http://localhost:8080/products")
+        var data = await fetch("https://0e2b-185-145-125-201.ngrok-free.app/products")
             .then(resp => resp.json());
         return data["products"];
     } catch (error) {
@@ -73,11 +73,17 @@ function createProductCard(productId, productName, price, imageUrl) {
 }
 
 function createOrderButton() {
+    const link = document.createElement('a');
+    link.classList.add('a_order'); // Добавление класса
+    link.href = '/Making-an-order';
+
     const button = document.createElement('button');
     button.classList.add('order');
     button.id = 'theid';
+    
     button.textContent = 'Offerm order';
-    return button;
+    link.appendChild(button);
+    return link;
 }
 
 function emptyBasket() {

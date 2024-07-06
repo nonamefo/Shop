@@ -19,3 +19,12 @@ document.onclick = event => {
         }
     }
 };
+
+
+
+document.getElementById('theid').addEventListener('click', function(event) {
+
+    migrateLocalStorageToCookie();
+    // Отправляем форму 
+    document.querySelector('form').submit();
+});

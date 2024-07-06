@@ -10,9 +10,6 @@
       "oldPrice": "",
       "quantity": 1,
       "currency": "EGP",
-      "sku": "",
-      "outOfStock": false,
-      "isFeatured": false,
       "categories": [
         "2",
         "6"
@@ -36,9 +33,6 @@
       "oldPrice": "",
       "quantity": 1,
       "currency": "EGP",
-      "sku": "",
-      "outOfStock": false,
-      "isFeatured": false,
       "categories": [
         "2",
         "6"
@@ -62,9 +56,6 @@
       "oldPrice": "",
       "quantity": 1,
       "currency": "EGP",
-      "sku": "",
-      "outOfStock": false,
-      "isFeatured": false,
       "categories": [
         "2",
         "6"
@@ -88,9 +79,6 @@
       "oldPrice": "",
       "quantity": 1,
       "currency": "EGP",
-      "sku": "",
-      "outOfStock": false,
-      "isFeatured": false,
       "categories": [
         "2",
         "6"
@@ -114,9 +102,6 @@
       "oldPrice": "",
       "quantity": 1,
       "currency": "EGP",
-      "sku": "",
-      "outOfStock": false,
-      "isFeatured": false,
       "categories": [
       ],
       "images": [
@@ -138,9 +123,6 @@
       "oldPrice": "",
       "quantity": 1,
       "currency": "EGP",
-      "sku": "",
-      "outOfStock": false,
-      "isFeatured": false,
       "categories": [
         "1",
         "4"
@@ -164,9 +146,6 @@
       "oldPrice": "",
       "quantity": 1,
       "currency": "EGP",
-      "sku": "",
-      "outOfStock": false,
-      "isFeatured": false,
       "categories": [
         "1",
         "6"
@@ -190,9 +169,6 @@
       "oldPrice": "",
       "quantity": 1,
       "currency": "EGP",
-      "sku": "",
-      "outOfStock": false,
-      "isFeatured": false,
       "categories": [
         "1",
         "4"
@@ -216,9 +192,6 @@
       "oldPrice": "",
       "quantity": 1,
       "currency": "EGP",
-      "sku": "",
-      "outOfStock": false,
-      "isFeatured": false,
       "categories": [
         "1",
         "5"
@@ -242,9 +215,6 @@
       "oldPrice": "",
       "quantity": 1,
       "currency": "EGP",
-      "sku": "",
-      "outOfStock": false,
-      "isFeatured": false,
       "categories": [],
       "images": [
         {
@@ -265,9 +235,6 @@
       "oldPrice": "",
       "quantity": 1,
       "currency": "EGP",
-      "sku": "",
-      "outOfStock": false,
-      "isFeatured": false,
       "categories": [
         "1",
         "5"
@@ -291,9 +258,6 @@
       "oldPrice": "",
       "quantity": 1,
       "currency": "EGP",
-      "sku": "",
-      "outOfStock": false,
-      "isFeatured": false,
       "categories": [
         "1",
         "5"

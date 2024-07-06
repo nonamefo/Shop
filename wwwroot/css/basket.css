@@ -59,3 +59,7 @@ border-radius: 40px;
     from { background-color: white; }
     to { background-color: aquamarine; }
 }
+.a_order { 
+    color: black;
+    text-decoration: none; /* Удаляем подчеркивание */
+}
