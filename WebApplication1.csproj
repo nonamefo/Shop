@@ -7,6 +7,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="Pages\About-us.html" />
+    <Content Include="Pages\basket.html" />
+    <Content Include="Pages\Contacts.html" />
+    <Content Include="Pages\Home.html" />
+    <Content Include="Pages\index.html" />
+    <Content Include="Pages\Making-an-order.html" />
+    <Content Include="Pages\thank-you-page.html" />
+    <Content Include="Pages\Сatalog.html" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Include="wwwroot\favicon.ico" />
   </ItemGroup>
 

@@ -8,14 +8,13 @@
 
             string httpMethod = context.Request.Method;
             Console.Write(
-                    $"[{context.Connection.RemoteIpAddress};" +
+                    $"[{context.Connection.RemoteIpAddress}:" +
                     $"{context.Connection.RemotePort}] " +
                     $"{httpMethod} {context.Response.StatusCode} " +
                     $" |:|{DateTime.Now.ToShortTimeString()}|:|\t" +
                     $"{context.Request.Path}"
                  );
 
-            Console.WriteLine();
         }
     }
 }

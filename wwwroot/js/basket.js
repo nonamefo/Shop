@@ -1,6 +1,6 @@
 async function API_get() {
     try {
-        var data = await fetch("https://0e2b-185-145-125-201.ngrok-free.app/products")
+        var data = await fetch("http://localhost:8080/products")
             .then(resp => resp.json());
         return data["products"];
     } catch (error) {

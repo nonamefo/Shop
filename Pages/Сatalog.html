@@ -13,7 +13,7 @@
 
     <title>Basket</title>
     <link rel="stylesheet" href="css/nicepage.css" media="screen">
-    <link rel="stylesheet" href="css/Сatalog.css" media="screen">
+    <link rel="stylesheet" href="css/Сatalog.css">
     <link rel="stylesheet" href="css/object_Catalog.css">
     <link id="u-theme-google-font" rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
@@ -21,9 +21,7 @@
     <script class="u-script" type="text/javascript" src="js/jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="js/nicepage.js" defer=""></script>
     <script src="js/object_Catalog.js"></script>
-    <script src="js/Catalog_creater.js"></script>
     <script src="js/catolog-add-to-basket.js"></script>
-    <script src="js/btn-Catalog.js"></script>
     <script type="application/ld+json">{
         "@context": "http://schema.org",
         "@type": "Organization",
@@ -100,9 +98,28 @@
                 </nav>
             </div>
         </div>
-</header>
+    </header>
+    <div class="u-categories-listbox"><!--products_categories_filter_select-->
+        <select class="u-border-grey-30 u-input u-select-categories">
+            <option value="">All</option>
+            <option value="featured">Featured</option>
+            <option value="1"> Clothes</option>
+            <option value="4">-- suit</option>
+            <option value="5">-- shirts</option>
+            <option value="6">-- Dress</option>
+            <option value="3"> Accessories</option>
+        </select><!--/products_categories_filter_select-->
+        <svg class="u-caret u-caret-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px"
+             viewBox="0 0 16 16" style="fill:currentColor;" xml:space="preserve"><polygon class="st0" points="8,12 2,4 14,4 "></polygon></svg>
+        </div><!--/products_categories_filter-->
+    </div>
+    <div class="u-repeater u-repeater-1">
+        <div class="catalog"></div>
+</div>
 
-<div class="catalog"></div>
+
+
 
 <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-46ff">
     <div class="u-clearfix u-sheet u-sheet-1">

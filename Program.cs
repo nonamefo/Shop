@@ -25,7 +25,7 @@ app.Map("/", async (context) =>
 
     method.user_console(context);
 
-    await response.SendFileAsync("wwwroot/home.html");
+    await response.SendFileAsync("Pages/home.html");
 });
 
 app.Map("/Contacts", async (context) =>
@@ -35,7 +35,7 @@ app.Map("/Contacts", async (context) =>
 
     method.user_console(context);
 
-    await response.SendFileAsync("wwwroot/Contacts.html");
+    await response.SendFileAsync("Pages/Contacts.html");
 });
 
 app.Map("/About-us", async (context) =>
@@ -45,7 +45,7 @@ app.Map("/About-us", async (context) =>
 
     method.user_console(context);
 
-    await response.SendFileAsync("wwwroot/About-us.html");
+    await response.SendFileAsync("Pages/About-us.html");
 });
 
 
@@ -56,7 +56,7 @@ app.Map("/Ñatalog", async (context) =>
 
     method.user_console(context);
 
-    await response.SendFileAsync("wwwroot/Ñatalog.html");
+    await response.SendFileAsync("Pages/Ñatalog.html");
 });
 
 
@@ -67,7 +67,7 @@ app.Map("/Basket", async (context) =>
 
     method.user_console(context);
 
-    await response.SendFileAsync("wwwroot/basket.html");
+    await response.SendFileAsync("Pages/basket.html");
 });
 
 
@@ -79,7 +79,7 @@ app.Map("/Making-an-order", async(context) =>
     Console.WriteLine(num);
     method.user_console(context);
 
-    await response.SendFileAsync("wwwroot/Making-an-order.html");
+    await response.SendFileAsync("Pages/Making-an-order.html");
 });
 
 
