@@ -49,7 +49,7 @@ app.Map("/About-us", async (context) =>
 });
 
 
-app.Map("/Catalog", async (context) =>
+app.Map("/Сatalog", async (context) =>
 {
     var response = context.Response;
     response.ContentType = "text/html;";
