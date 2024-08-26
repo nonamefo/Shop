@@ -1,0 +1,51 @@
+.select {
+    padding: 5px 5px;
+    width: 160px;
+    border-radius: 30px;
+    background-color: snow;
+    transition: background-color 0.3s;
+}
+
+.select:hover {
+    transition: background-color 0.9s; 
+    background-color: darkgray;
+}
+
+.select.active { /* Класс для активного состояния */
+    border-radius: 0px;
+}
+.page{
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.button{
+    padding: 5px 20px;
+    border-radius: 50px;
+    background-color: snow;
+    transition: background-color 0.3s;
+
+}
+.button:hover{
+    transition: background-color 0.9s;
+    background-color: darkgray;
+}
+
+p {
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.currency {
+    margin: 0 10px;
+}
+.input{
+    border-radius: 20px;
+    padding: 5px;
+}
+.warning_text{
+    text-align: center;
+    display: flex;
+    align-items: center;
+}

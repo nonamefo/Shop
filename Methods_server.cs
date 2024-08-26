@@ -1,4 +1,9 @@
-﻿namespace WebApplication1
+﻿using Telegram.Bot;
+using Telegram.Bot.Polling;
+using Telegram.Bot.Types;
+
+
+namespace WebApplication1
 {
     public class Methods_server
     {
@@ -17,8 +22,45 @@
 
         }
     }
-}
 
+
+    public class telegram_bot
+    {
+        public void start_chat_bot(string email, string phone, string order)
+        {
+            // ... 
+
+            // Инициализация Telegram-бота
+            var client = new TelegramBotClient("7383010248:AAHIKMhVhDLrW8Z7ldVFwXHwie2tB935FGU"); // Замените на ваш токен 
+
+            // Настройка обработчика обновлений
+
+            // Поиск пользователя с никнеймом "Nogorel"
+            Task.Run(async () => {
+                var users = await client.GetUpdatesAsync(offset: 0, limit: 100, timeout: 10); // Получаем список пользователей
+                var targetUser = users.FirstOrDefault(u => u.Message.From.Username == "Nogorel"); 
+
+                if (targetUser != null)
+                {
+                    // Отправка сообщения пользователю "Nogorel"
+                    await client.SendTextMessageAsync(
+                        chatId: 7116847077, 
+                        text: $"Новый заказ: \n" +
+                            $"Email: {email}\n" +
+                            $"Телефон: {phone}\n" +
+                            $"Заказ: {order}"
+                    );
+                    Console.WriteLine();
+                }
+                else
+                {
+                    Console.WriteLine("Пользователь с никнеймом \"Nogorel\" не найден.");
+                }
+            });
+            Console.ReadLine();
+        }
+    }
+}
 
 public class Product
 {

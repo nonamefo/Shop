@@ -1,6 +1,8 @@
 using Microsoft.Extensions.FileProviders;
+using Microsoft.Extensions.Options;
 using System;
 using System.IO;
+using System.Security.Cryptography.X509Certificates;
 using WebApplication1;
 
 
@@ -49,7 +51,7 @@ app.Map("/About-us", async (context) =>
 });
 
 
-app.Map("/Сatalog", async (context) =>
+app.Map("/Catalog", async (context) =>
 {
     var response = context.Response;
     response.ContentType = "text/html;";
@@ -73,14 +75,57 @@ app.Map("/Basket", async (context) =>
 
 app.Map("/Making-an-order", async(context) =>
 {
-    var response = context.Response;
-    response.ContentType = "text/html;";
-    var num = context.Items["data-id"];
-    Console.WriteLine(num);
+
     method.user_console(context);
 
-    await response.SendFileAsync("./Pages/Making-an-order.html");
+    if (context.Request.Method == HttpMethods.Get){
+        var response = context.Response;
+        response.ContentType = "text/html;";
+        var num = context.Items["data-id"];
+        Console.WriteLine(num);
+        method.user_console(context);
+
+        await response.SendFileAsync("./Pages/Making-an-order.html");
+
+
+    }else if (context.Request.Method == HttpMethods.Post) {
+        var response = context.Response;
+        response.ContentType = "text/html;";
+
+        var form = context.Request.Form;
+
+        // Проверка на заполненность полей
+        if (string.IsNullOrEmpty(form["SelectOrder"]) ||
+            string.IsNullOrEmpty(form["phone"]) ||
+            string.IsNullOrEmpty(form["email"])) 
+        {
+            // Отправляем страницу с ошибкой
+            await response.SendFileAsync("./Pages/error-page.html");
+        }
+
+        // Извлекаем данные из формы
+        string order = form["SelectOrder"];
+        string phone = form["phone"];
+        string email = form["email"];
+        // ... (получение других данных)
+        
+        telegram_bot botara = new telegram_bot();
+        botara.start_chat_bot(email, phone, order);
+
+
+        Console.WriteLine(order);
+        Console.WriteLine(phone);
+        Console.WriteLine(email);
+
+        // Отправляем страницу с подтверждением
+        await response.SendFileAsync("./Pages/thank-you-page.html");
+    }
 });
+
+
+
+
+
 
 
 app.Map("/products", async (context) =>
