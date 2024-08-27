@@ -58,7 +58,6 @@ app.Map("/Сatalog", async (context) =>
     response.ContentType = "text/html;";
 
     mai.send_message_to_email();
-
     method.user_console(context);
 
     await response.SendFileAsync("./Pages/Catalog.html");
