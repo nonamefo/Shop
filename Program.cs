@@ -15,6 +15,7 @@ builder.Services.AddRazorPages();
 var app = builder.Build();
 
 Methods_server method = new Methods_server();
+mail_sender mai = new mail_sender();
 
 app.UseDefaultFiles();
 app.UseStaticFiles();
@@ -51,10 +52,12 @@ app.Map("/About-us", async (context) =>
 });
 
 
-app.Map("/Catalog", async (context) =>
+app.Map("/Сatalog", async (context) =>
 {
     var response = context.Response;
     response.ContentType = "text/html;";
+
+    mai.send_message_to_email();
 
     method.user_console(context);
 

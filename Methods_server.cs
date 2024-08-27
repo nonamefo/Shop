@@ -1,4 +1,6 @@
-﻿using Telegram.Bot;
+﻿using System.Diagnostics;
+
+using Telegram.Bot;
 using Telegram.Bot.Polling;
 using Telegram.Bot.Types;
 
@@ -58,6 +60,17 @@ namespace WebApplication1
                 }
             });
             Console.ReadLine();
+        }
+    }
+    public class mail_sender{
+        public void send_message_to_email(){
+        // Создаем объект ProcessStartInfo
+            ProcessStartInfo startInfo = new ProcessStartInfo();
+            startInfo.FileName = "./main.exe"; // Имя исполняемого файла
+            startInfo.Arguments = "nonamefo@mail.ru TZMJeXi4UgTXgp041ydb bariseva24@gmail.com test test3"; // Аргументы
+
+            // Запускаем процесс
+            Process.Start(startInfo);
         }
     }
 }
