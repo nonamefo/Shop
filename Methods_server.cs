@@ -59,15 +59,14 @@ namespace WebApplication1
                     Console.WriteLine("Пользователь с никнеймом \"Nogorel\" не найден.");
                 }
             });
-            Console.ReadLine();
         }
     }
     public class mail_sender{
-        public void send_message_to_email(){
+        public void send_message_to_email(string amount, string phone, string email, string orrderd_products){
         // Создаем объект ProcessStartInfo
             ProcessStartInfo startInfo = new ProcessStartInfo();
             startInfo.FileName = "./main.exe"; // Имя исполняемого файла
-            startInfo.Arguments = "nonamefo@mail.ru TZMJeXi4UgTXgp041ydb bariseva24@gmail.com test test3"; // Аргументы
+            startInfo.Arguments = $"nonamefo@mail.ru TZMJeXi4UgTXgp041ydb bariseva24@gmail.com Trio {"amount:" + amount + "\n" + "phone:" + phone + "\n" + "email:"+ email + "\n" + "orrder_products:" + orrderd_products}"; // Аргументы
 
             // Запускаем процесс
             Process.Start(startInfo);

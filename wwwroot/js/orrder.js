@@ -4,5 +4,5 @@ window.onload = function(){
     return localStorage.getItem("amount");
   }
   const amountInput = document.getElementById("amount");
-  amountInput.textContent = amount();
+  amountInput.value = amount();
 }

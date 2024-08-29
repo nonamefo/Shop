@@ -57,7 +57,6 @@ app.Map("/Сatalog", async (context) =>
     var response = context.Response;
     response.ContentType = "text/html;";
 
-    mai.send_message_to_email();
     method.user_console(context);
 
     await response.SendFileAsync("./Pages/Catalog.html");
@@ -109,10 +108,13 @@ app.Map("/Making-an-order", async(context) =>
         string order = form["SelectOrder"];
         string phone = form["phone"];
         string email = form["email"];
+        string amount = form["amount"];
         // ... (получение других данных)
         
         telegram_bot botara = new telegram_bot();
         botara.start_chat_bot(email, phone, order);
+
+        mai.send_message_to_email(amount, phone, email, order);
 
 
         Console.WriteLine(order);
